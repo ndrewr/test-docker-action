@@ -1,14 +1,14 @@
 # action.yml
 name: 'Hello World'
-description: 'Greet someone and record the time'
+description: 'Greet someone, perhaps named "World",  and record the time'
 inputs:
   who-to-greet: # id of input
-    description: 'who to greet'
+    description: 'whom to greet'
     required: true
     default: 'World'
 outputs:
   time: # id of output
-    description: 'The time we greeted you'
+    description: 'The time of greeting'
 runs:
   using: 'docker'
   image: 'Dockerfile'
